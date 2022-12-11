@@ -34,11 +34,29 @@
 
     </section>
 
-    <!----Call To Action--->
+    <!--Get Quote-->
+    <section class="getquote">
+        <h3>Get a FREE QUOTE</h3>
 
-    <section class="cta">
-        <h1>Contact Us now to get a FREE QUOTE</h1>
-        <a href="" class="quote-btn"> CONTACT US</a>
+        <div class="form">
+            <form class="quoteform" action="form_handler.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Enter you name" required>
+                <input type="email" id="email" name="email" placeholder="Enter your Email Address" required> <!--Add JS to check validity-->
+                <input type="text" id="number" name="number" placeholder="Enter your Phone Number" required> <!--Add JS to check validity-->
+                <input type="Surburb" id="surburb" name="surburb" placeholder="Enter your Surburb" required>
+                <input type="Address" id="address" name="address" placeholder="Enter your Address(Optional)">
+                <input type="text" id="service" name="service" placeholder="Enter Service Required" required>
+                <textarea rows="10" name="job_details" placeholder="Enter Job details"></textarea><br>
+                <label>Completion Date: 
+                    <input type="datetime-local" name="date" /></label> <!--Disable Past Dates-->
+                
+                <label> Upload Pictures:                                                           <!--Set size limit and the max number of pictures that can be uploaded-->
+                    <input type="file" name="pictures" /></label> 
+                    <button type="submit" class="quote-btn"> Upload Pictures</button><br>
+                <button type ="submit" id="getq" class="quote-btn">Get a Free Quote</button>
+                
+              </form> 
+        </div>
 
     </section>
 

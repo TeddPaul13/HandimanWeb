@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .header{
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Outdoor1.jpg); /* Image not showing*/
     background-position: center;
@@ -34,7 +34,7 @@ nav img{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 18px;
 }
 .nav-links ul li::after{ /* Line under nav links is hidden because of 0 width*/
     content: '';
@@ -124,14 +124,21 @@ nav .fa {
 }
 h1{
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 800;
+    
 }
-p{
-    color: rgb(15, 13, 13);
+.service-para{
+    color: rgb(255, 255, 255);
     font-size: 14px;
-    font-weight: 300;
+    font-weight:500;
     line-height: 22px;
     padding: 10px;
+}
+p{
+    font-size: 14px;
+    font-weight:300;
+    line-height: 22px;
+    padding: 10px;  
 }
 .row{
     margin-top: 5%;
@@ -147,10 +154,28 @@ p{
     box-sizing:border-box;
     transition: 0.5s;
 }
+#lawn-services{
+    background-image: url("images/lawns.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 0px;
+    background-position: center;
+   
+}
+#furniture-service{
+    background-image: url("images/furniture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 0px;
+    background-position: center;
+}
 h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    color:#ffffff;
 }
 .services-col:hover{
     box-shadow: 0 0 20px 0px rgba(103,255,71,0.5);
@@ -241,4 +266,34 @@ h3{
     padding: 18px 0;
     text-align: center;
 
+}
+
+/*---Get a Quote--*/
+
+
+    
+.form{
+    border: 1px solid #c71818;
+    margin: 50px auto;
+    padding: 10px 20px;
+    width: 50%;
+    background: #cc7878;
+    
+    
+
+}
+.quoteform input, textarea{
+    padding: 10px;
+    width:100%;
+    outline: none;
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+.getquote h3{
+    margin-top: 50px;
+}
+
+.quoteform button{
+    margin-top:10px;
+    margin-bottom: 10px;
 }
