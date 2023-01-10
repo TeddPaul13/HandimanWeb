@@ -13,7 +13,7 @@
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"> -->
 </head>
 <body>
-    <section class="header">
+    <section class="header" id="serviceheader">
         <nav>
             <a href="index.html"> <img src="images/Logo.jpg"></a>
             <div class = "nav-links" id="navLinks">
@@ -29,14 +29,14 @@
             <i class="fa fa-bars" onclick= "showMenu()" ></i>
         </nav>
 
-    <div class="text-box">
-        <h1> What can we do for you? </h1>
+    <!--<div class="text-box">
+        <h1> What can we do for you? </h1> -->
 
     </section>
 
     <!--Get Quote-->
     <section class="getquote">
-        <h3>Get a FREE QUOTE</h3>
+        <h1>Get a FREE QUOTE</h1>
 
         <div class="form">
             <form class="quoteform" action="form_handler.php" method="post">
@@ -50,10 +50,10 @@
                 <label>Completion Date: 
                     <input type="datetime-local" name="date" /></label> <!--Disable Past Dates-->
                 
-                <label> Upload Pictures:                                                           <!--Set size limit and the max number of pictures that can be uploaded-->
+                <label> Upload Pictures:         <!--Set size limit and the max number of pictures that can be uploaded-->
                     <input type="file" name="pictures" /></label> 
-                    <button type="submit" class="quote-btn"> Upload Pictures</button><br>
-                <button type ="submit" id="getq" class="quote-btn">Get a Free Quote</button>
+                    <button type="submit" class="quote-btn"> Upload Pictures</button><br> <!--Include take photo option-->
+                <button type ="submit" id="getq" class="quote-btn">Submit Quote Request</button>
                 
               </form> 
         </div>
